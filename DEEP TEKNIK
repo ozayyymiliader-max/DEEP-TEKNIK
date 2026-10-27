@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Deep Teknik Uluwatu Bali | Plumbing, AC & Perbaikan Rumah</title>
+  <meta name="description" content="Deep Teknik melayani jasa plumbing, pipa bocor, drain mampet, toilet mampet, pompa air, AC, water filter, CCTV, water heater dan listrik di Uluwatu, Bali. Hubungi WhatsApp kami.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#102b24">
+  <meta property="og:title" content="Deep Teknik | Jasa Teknisi Uluwatu Bali">
+  <meta property="og:description" content="Jasa perbaikan dan instalasi plumbing, AC, pompa air, listrik dan kebutuhan teknis rumah di Uluwatu, Bali.">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --dark: #102b24;
+      --green: #16845b;
+      --lime: #b9f27c;
+      --cream: #f6f7f1;
+      --white: #ffffff;
+      --text: #273a33;
+      --muted: #68766f;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--cream);
+      line-height: 1.65;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: auto;
+    }
+
+    header {
+      background: var(--dark);
+      color: white;
+      padding: 17px 0;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .brand {
+      font-size: 23px;
+      font-weight: 800;
+      letter-spacing: -0.8px;
+    }
+
+    .brand span { color: var(--lime); }
+
+    .nav-link {
+      font-size: 14px;
+      font-weight: bold;
+      color: #e3eee7;
+    }
+
+    .hero {
+      background:
+        radial-gradient(ellipse at 85% 15%, #285846 0, transparent 38%),
+        var(--dark);
+      color: white;
+      padding: 82px 0 88px;
+    }
+
+    .hero-content { max-width: 760px; }
+
+    .eyebrow {
+      color: var(--lime);
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 61px);
+      line-height: 1.12;
+      letter-spacing: -2px;
+      margin: 17px 0;
+    }
+
+    .hero p {
+      color: #d8e5dd;
+      font-size: 17px;
+      max-width: 620px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 27px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 9px;
+      border-radius: 9px;
+      padding: 14px 20px;
+      font-weight: bold;
+      transition: transform .2s, opacity .2s;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+
+    .btn-green {
+      background: #25d366;
+      color: #082c1a;
+    }
+
+    .btn-outline {
+      color: white;
+      border: 1px solid #648075;
+    }
+
+    section { padding: 67px 0; }
+
+    .section-heading {
+      max-width: 680px;
+      margin-bottom: 30px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(27px, 4vw, 39px);
+      line-height: 1.2;
+      color: var(--dark);
+      margin: 8px 0 12px;
+      letter-spacing: -1px;
+    }
+
+    .section-heading p { color: var(--muted); }
+
+    .kicker {
+      font-size: 12px;
+      font-weight: bold;
+      color: var(--green);
+      text-transform: uppercase;
+      letter-spacing: 1.7px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .service {
+      background: white;
+      padding: 23px;
+      border: 1px solid #e6ebe4;
+      border-radius: 13px;
+    }
+
+    .service-icon {
+      display: inline-grid;
+      place-items: center;
+      width: 43px;
+      height: 43px;
+      background: #e8f5e9;
+      border-radius: 11px;
+      font-size: 22px;
+    }
+
+    .service h3 {
+      color: var(--dark);
+      font-size: 17px;
+      margin: 13px 0 6px;
+    }
+
+    .service p {
+      font-size: 14px;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .about {
+      background: white;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 38px;
+    }
+
+    .about-panel {
+      padding: 30px;
+      background: var(--dark);
+      color: white;
+      border-radius: 17px;
+    }
+
+    .about-panel h3 {
+      font-size: 25px;
+      line-height: 1.3;
+      margin-top: 0;
+    }
+
+    .check-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .check-list li {
+      padding: 7px 0;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      color: var(--green);
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .about-panel .check-list li::before { color: var(--lime); }
+
+    .cta {
+      background: #e6f1e4;
+      text-align: center;
+    }
+
+    .cta .section-heading {
+      margin: 0 auto 20px;
+    }
+
+    .cta .btn { margin-top: 8px; }
+
+    footer {
+      background: var(--dark);
+      color: #d8e5dd;
+      padding: 27px 0;
+      font-size: 13px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .floating-wa {
+      position: fixed;
+      right: 19px;
+      bottom: 19px;
+      z-index: 10;
+      border-radius: 50px;
+      padding: 13px 17px;
+      background: #25d366;
+      color: #082c1a;
+      font-weight: bold;
+      box-shadow: 0 5px 22px #0002;
+    }
+
+    @media (max-width: 760px) {
+      .hero { padding: 61px 0; }
+      .services { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .about-grid { grid-template-columns: 1fr; }
+      .service { padding: 17px; }
+      .nav-link { font-size: 12px; }
+      section { padding: 49px 0; }
+    }
+
+    @media (max-width: 390px) {
+      .services { grid-template-columns: 1fr; }
+      .brand { font-size: 20px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home">DEEP <span>TEKNIK.</span></a>
+      <a class="nav-link" href="#layanan">Lihat Layanan ↓</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="eyebrow">Jasa teknisi · Uluwatu, Bali</div>
+        <h1>Solusi Teknik Rumah, Villa & Properti Anda.</h1>
+        <p>
+          Butuh bantuan untuk pipa bocor, saluran mampet, AC,
+          pompa air, atau instalasi baru? Deep Teknik siap membantu
+          kebutuhan perbaikan dan instalasi teknis Anda.
+        </p>
+        <div class="actions">
+          <a class="btn btn-green" href="https://wa.me/6285726196929?text=Halo%20Deep%20Teknik%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20teknisi."
+             target="_blank" rel="noopener noreferrer">
+            ☎ Chat WhatsApp
+          </a>
+          <a class="btn btn-outline" href="#layanan">Lihat Semua Layanan</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="layanan">
+      <div class="container">
+        <div class="section-heading">
+          <div class="kicker">Layanan kami</div>
+          <h2>Satu kontak untuk berbagai kebutuhan teknis</h2>
+          <p>
+            Layanan servis, perbaikan, dan instalasi baru untuk rumah,
+            villa, maupun properti di area Uluwatu dan sekitarnya.
+            Hubungi kami untuk mendiskusikan kebutuhan Anda.
+          </p>
+        </div>
+
+        <div class="services">
+          <article class="service">
+            <span class="service-icon">🔧</span>
+            <h3>Plumbing & Instalasi Baru</h3>
+            <p>Servis sistem perpipaan dan pemasangan instalasi air.</p>
+          </article>
+          <article class="service">
+            <span class="service-icon">💧</span>
+            <h3>Pipa Bocor</h3>
+            <p>Pemeriksaan dan perbaikan kebocoran pipa air.</p>
+          </article>
+          <article class="service">
+            <span class="service-icon">🚿</span>
+            <h3>Drain & Toilet Mampet</h3>
+            <p>Membantu menangani saluran pembuangan dan toilet tersumbat.</p>
+          </article>
+          <article class="service">
+            <span class="service-icon">❄️</span>
+            <h3>Servis AC</h3>
+            <p>Layanan perawatan dan perbaikan AC sesuai kebutuhan.</p>
+          </article>
+          <article class="service">
+            <span class="service-icon">⚙️</span>
+            <h3>Pompa Air</h3>
+            <p>Pemeriksaan gangguan pompa air dan instalasinya.</p>
+          </article>
+          <article class="service">
+            <span class="service-icon">🚰</span>
+            <h3>Water Filter</h3>
+            <p>Instalasi dan perawatan sistem penyaringan air.</p>
+          </article>
+          <article class="service">
+            <span class="service-icon">📹</span>
+            <h3>CCTV</h3>
+            <p>Pemasangan dan pemeriksaan sistem CCTV.</p>
+          </article>
+          <article class="service">
+            <span class="service-icon">♨️</span>
+            <h3>Water Heater</h3>
+            <p>Instalasi dan pemeriksaan pemanas air.</p>
+          </article>
+          <article class="service">
+            <span class="service-icon">⚡</span>
+            <h3>Instalasi & Gangguan Listrik</h3>
+            <p>Pemeriksaan masalah kelistrikan dan instalasi terkait.</p>
+          </article>
+        </div>
+
+        <p style="font-size:13px;color:#68766f;margin-top:20px">
+          Catatan: pekerjaan listrik dilakukan setelah pemeriksaan
+          kondisi dan keselamatan di lokasi.
+        </p>
+      </div>
+    </section>
+
+    <section class="about" id="tentang">
+      <div class="container about-grid">
+        <div>
+          <div class="kicker">Kenali Deep Teknik</div>
+          <div class="section-heading">
+            <h2>Praktis, jelas, dan mudah dihubungi.</h2>
+            <p>
+              Sampaikan kendala Anda melalui WhatsApp. Jelaskan lokasi,
+              jenis kerusakan, dan bila memungkinkan kirim foto atau
+              video agar kebutuhan pekerjaan lebih mudah dipahami.
+            </p>
+          </div>
+          <a class="btn btn-green"
+             href="https://wa.me/6285726196929?text=Halo%20Deep%20Teknik%2C%20saya%20ingin%20konsultasi%20perbaikan."
+             target="_blank" rel="noopener noreferrer">
+            Konsultasi Sekarang ↗
+          </a>
+        </div>
+
+        <div class="about-panel">
+          <h3>Melayani area Uluwatu, Bali</h3>
+          <p>
+            Untuk rumah tinggal, villa, dan properti lainnya.
+            Konfirmasikan lokasi, jadwal, serta jenis pekerjaan sebelum
+            kunjungan.
+          </p>
+          <ul class="check-list">
+            <li>Servis dan perbaikan</li>
+            <li>Instalasi baru</li>
+            <li>Konsultasi via WhatsApp</li>
+            <li>Konfirmasi kebutuhan sebelum pengerjaan</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="kontak">
+      <div class="container">
+        <div class="section-heading">
+          <div class="kicker">Hubungi kami</div>
+          <h2>Ada masalah teknik? Mari kita bicarakan.</h2>
+          <p>
+            Klik tombol di bawah untuk langsung mengirim pesan ke
+            WhatsApp Deep Teknik. Ceritakan kendala dan lokasi Anda.
+          </p>
+        </div>
+        <a class="btn btn-green"
+           href="https://wa.me/6285726196929?text=Halo%20Deep%20Teknik%2C%20saya%20membutuhkan%20jasa%20teknisi%20di%20area%20Uluwatu."
+           target="_blank" rel="noopener noreferrer">
+          ☎ Hubungi Deep Teknik via WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div><strong>DEEP TEKNIK</strong> · Uluwatu, Bali</div>
+      <div>© <span id="year"></span> Deep Teknik. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <a class="floating-wa"
+     href="https://wa.me/6285726196929?text=Halo%20Deep%20Teknik%2C%20saya%20ingin%20bertanya."
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Hubungi Deep Teknik melalui WhatsApp">
+    ☎ WhatsApp
+  </a>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
